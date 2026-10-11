@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '../services/supabase';
 import { Link } from 'react-router-dom';
-
 import type {
   Transaction,
   TransactionType,
@@ -54,10 +53,6 @@ export const Dashboard = () => {
       ? expenseCategories
       : incomeCategories;
 
-  // ==============================
-  // ЗАГРУЗКА ПРОФИЛЯ
-  // ==============================
-
   useEffect(() => {
     const loadData = async () => {
       const {
@@ -100,10 +95,6 @@ export const Dashboard = () => {
     loadData();
   }, []);
 
-  // ==============================
-  // ЗАГРУЗКА ТРАНЗАКЦИЙ
-  // ==============================
-
   const loadTransactions = async (id: string) => {
     const { data, error } = await supabase
       .from('transactions')
@@ -121,9 +112,6 @@ export const Dashboard = () => {
     setTransactions(data || []);
   };
 
-  // ==============================
-  // СОХРАНИТЬ БАЛАНС
-  // ==============================
 
   const saveBalance = async () => {
     if (!userId) return;
@@ -151,9 +139,6 @@ export const Dashboard = () => {
     setBalance(newBalance);
   };
 
-  // ==============================
-  // ДОБАВЛЕНИЕ ТРАНЗАКЦИИ
-  // ==============================
 
   const addTransaction = async () => {
     if (!userId) return;
@@ -218,9 +203,6 @@ export const Dashboard = () => {
     clearInputs();
   };
 
-  // ==============================
-  // УДАЛЕНИЕ
-  // ==============================
 
   const deleteTransaction = async (
     transaction: Transaction  
@@ -264,9 +246,6 @@ export const Dashboard = () => {
     setBalanceInput(String(newBalance));
   };
 
-  // ==============================
-  // ОЧИСТКА ПОЛЕЙ
-  // ==============================
 
   const clearInputs = () => {
     setDescription('');
@@ -275,18 +254,14 @@ export const Dashboard = () => {
     setCategoryOpen(false);
   };
 
-  // ==============================
-  // ФИЛЬТРАЦИЯ ПО ВКЛАДКЕ
-  // ==============================
+
 
   const visibleTransactions =
     transactions.filter(
       (item) => item.type === activeTab
     );
 
-  // ==============================
-  // ФОРМАТ ДАТЫ
-  // ==============================
+
 
   const formatDate = (date: string) => {
     return new Date(date).toLocaleDateString(
@@ -294,9 +269,6 @@ export const Dashboard = () => {
     );
   };
 
-  // ==============================
-  // SUMMARY
-  // ==============================
 
   const monthNames = [
     'СІЧЕНЬ',
@@ -341,7 +313,6 @@ export const Dashboard = () => {
 
       <div className="dashboard-container">
 
-        {/* БАЛАНС */}
 
         <div className="dashboard-top">
 
@@ -394,9 +365,6 @@ export const Dashboard = () => {
 
         </div>
 
-
-        {/* ПОДСКАЗКА ЕСЛИ 0 */}
-
         {balance === 0 && (
           <div className="balance-tooltip">
             <div className="tooltip-arrow"></div>
@@ -415,8 +383,6 @@ export const Dashboard = () => {
           </div>
         )}
 
-
-        {/* ВКЛАДКИ */}
 
         <div className="tabs">
 
@@ -453,7 +419,6 @@ export const Dashboard = () => {
 
         <div className="finance-card">
 
-          {/* ФОРМА */}
 
           <div className="transaction-form">
 
@@ -569,8 +534,6 @@ export const Dashboard = () => {
           </div>
 
 
-          {/* ТАБЛИЦА */}
-
           <div className="finance-content">
 
             <div className="transactions-table">
@@ -661,8 +624,6 @@ export const Dashboard = () => {
 
             </div>
 
-
-            {/* ЗВЕДЕННЯ */}
 
             <div className="summary">
 

@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
 import { supabase } from '../services/supabase';
 import type { Transaction } from '../types/database.types';
 
@@ -39,11 +38,6 @@ const incomeCategories = [
   'ЗП',
   'Дод. прибуток',
 ];
-
-/*
-  Тут потом просто меняешь названия файлов
-  на свои реальные SVG.
-*/
 
 const categoryIcons: Record<string, string> = {
   'Продукти': '/svg/Group 62.png',
@@ -214,8 +208,6 @@ export const Calculations = () => {
 
       <section className="calculations-container">
 
-        {/* ВЕРХ */}
-
         <div className="calculations-top">
 
           <button
@@ -232,8 +224,6 @@ export const Calculations = () => {
             </span>
           </button>
 
-
-          {/* БАЛАНС */}
 
           <div className="calculations-balance">
 
@@ -255,8 +245,6 @@ export const Calculations = () => {
 
           </div>
 
-
-          {/* ПЕРИОД */}
 
           <div className="period">
 
@@ -302,8 +290,6 @@ export const Calculations = () => {
 
         </div>
 
-
-        {/* ОБЩАЯ СУММА */}
 
         <div className="calculations-summary">
 

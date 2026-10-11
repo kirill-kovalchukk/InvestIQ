@@ -34,7 +34,6 @@ export const AuthForm = () => {
       return;
     }
 
-    // если вход успешный
     navigate('/dashboard');
   };
 
