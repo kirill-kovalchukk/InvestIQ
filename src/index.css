@@ -22,34 +22,18 @@ input {
   font-family: inherit;
 }
 
-
-/* =============================== */
-/* HEADER */
-/* =============================== */
-
 .header {
   width: 100%;
   height: 44px;
-
   padding: 0 18px;
-
   background: #ffffff;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   border-bottom: 1px solid #f1f2f5;
-
   position: relative;
   z-index: 100;
 }
-
-/* LOGO */
-
-/* ========================= */
-/* INVESTIQ LOGO */
-/* ========================= */
 
 .header-logo {
   display: flex;
@@ -57,8 +41,6 @@ input {
 
   height: 100%;
 }
-
-/* весь значок */
 
 .invest-logo-icon {
   position: relative;
@@ -68,8 +50,6 @@ input {
 
   flex-shrink: 0;
 }
-
-/* светлый круг */
 
 .invest-logo-circle {
   position: absolute;
@@ -87,8 +67,6 @@ input {
   z-index: 2;
 }
 
-/* оранжевая плашка */
-
 .invest-logo-box {
   position: absolute;
 
@@ -105,8 +83,6 @@ input {
   z-index: 1;
 }
 
-/* INVESTIQ */
-
 .invest-logo-text {
   margin-left: 4px;
 
@@ -119,8 +95,6 @@ input {
 
   line-height: 1;
 }
-
-/* USER */
 
 .header-user {
   height: 100%;
@@ -181,10 +155,6 @@ input {
   color: #ff671c;
 }
 
-/* ======================================== */
-/* HEADER LOGO */
-/* ======================================== */
-
 .header-logo {
   height: 100%;
 
@@ -233,11 +203,6 @@ input {
 
   letter-spacing: -0.4px;
 }
-
-
-/* ======================================== */
-/* HEADER USER */
-/* ======================================== */
 
 .header-user {
   height: 100%;
@@ -311,19 +276,9 @@ input {
   color: #ff681d;
 }
 
-
-/* ======================================== */
-/* AUTH PAGE */
-/* ======================================== */
-
 .auth-page {
   width: 100%;
 }
-
-
-/* ======================================== */
-/* HERO */
-/* ======================================== */
 
 .hero {
   width: 100%;
@@ -340,11 +295,6 @@ input {
 
   padding: 0 9%;
 }
-
-
-/* ======================================== */
-/* INVESTIQ BIG TITLE */
-/* ======================================== */
 
 .brand {
   position: relative;
@@ -375,11 +325,6 @@ input {
   letter-spacing: 5px;
 }
 
-
-/* ======================================== */
-/* AUTH CARD */
-/* ======================================== */
-
 .auth-card {
   width: 375px;
 
@@ -407,11 +352,6 @@ input {
   margin-top: 25px;
   margin-bottom: 18px;
 }
-
-
-/* ======================================== */
-/* GOOGLE BUTTON */
-/* ======================================== */
 
 .google-button {
   width: 110px;
@@ -448,50 +388,33 @@ input {
 
 .google-icon {
   color: #4285f4;
-
   font-size: 18px;
   font-weight: bold;
 }
 
-
-/* ======================================== */
-/* AUTH FORM */
-/* ======================================== */
-
 .auth-card form {
   width: 100%;
-
   display: flex;
   flex-direction: column;
 }
 
 .auth-card label {
   margin-bottom: 8px;
-
   color: #222222;
-
   font-size: 11px;
 }
 
 .auth-card input {
   width: 100%;
   height: 45px;
-
   margin-bottom: 25px;
-
   padding: 0 20px;
-
   background-color: #f5f6fa;
-
   border: none;
   border-radius: 24px;
-
   outline: none;
-
   color: #222222;
-
   font-size: 12px;
-
   transition: 0.2s;
 }
 
@@ -503,16 +426,9 @@ input {
   box-shadow: 0 0 0 1px #ff7135;
 }
 
-
-/* ======================================== */
-/* AUTH BUTTONS */
-/* ======================================== */
-
 .auth-buttons {
   width: 100%;
-
   display: flex;
-
   gap: 12px;
 }
 
@@ -522,22 +438,16 @@ input {
 
   border: none;
   border-radius: 13px;
-
   font-size: 10px;
   font-weight: bold;
-
   cursor: pointer;
-
   transition: 0.2s;
 }
 
 .login-button {
   width: 110px;
-
   background-color: #ff681d;
-
   color: #ffffff;
-
   box-shadow: 0 4px 8px rgba(255, 104, 29, 0.3);
 }
 
@@ -547,11 +457,8 @@ input {
 
 .register-button {
   width: 110px;
-
   background-color: #f5f6fa;
-
   color: #60616a;
-
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
 }
 
@@ -559,21 +466,12 @@ input {
   background-color: #eeeeee;
 }
 
-
-/* ======================================== */
-/* BACKGROUND ICONS */
-/* ======================================== */
-
 .background-icons .icon {
   position: absolute;
-
   color: #dfe3ed;
-
   font-size: 50px;
   font-weight: bold;
-
   opacity: 0.8;
-
   z-index: 1;
 }
 
@@ -608,10 +506,6 @@ input {
 }
 
 
-/* ======================================== */
-/* WHITE BOTTOM AREA */
-/* ======================================== */
-
 .hero::after {
   content: "";
 
@@ -631,10 +525,6 @@ input {
 }
 
 
-/* ======================================== */
-/* DASHBOARD */
-/* ======================================== */
-
 .dashboard {
   width: 100%;
 
@@ -645,10 +535,6 @@ input {
   padding: 40px;
 }
 
-
-/* ======================================== */
-/* RESPONSIVE */
-/* ======================================== */
 
 @media (max-width: 900px) {
   .hero {
@@ -735,10 +621,6 @@ input {
   }
 }
 
-/* ==================================== */
-/* DASHBOARD */
-/* ==================================== */
-
 .dashboard-page {
   width: 100%;
 
@@ -749,21 +631,14 @@ input {
   overflow: hidden;
 
   background:
-    linear-gradient(
-      to bottom,
+    linear-gradient(to bottom,
       #f3f6fc 0%,
       #f3f6fc 68%,
       #ffffff 68%,
-      #ffffff 100%
-    );
+      #ffffff 100%);
 
   padding-top: 27px;
 }
-
-
-/* ==================================== */
-/* BACKGROUND ICONS */
-/* ==================================== */
 
 .dashboard-background-icons {
   pointer-events: none;
@@ -805,11 +680,6 @@ input {
   left: 42%;
 }
 
-
-/* ==================================== */
-/* MAIN CONTAINER */
-/* ==================================== */
-
 .dashboard-container {
   width: 84%;
   max-width: 1120px;
@@ -819,11 +689,6 @@ input {
   position: relative;
   z-index: 5;
 }
-
-
-/* ==================================== */
-/* TOP */
-/* ==================================== */
 
 .dashboard-top {
   height: 62px;
@@ -931,11 +796,6 @@ input {
   height: 5px;
 }
 
-
-/* ==================================== */
-/* TABS */
-/* ==================================== */
-
 .tabs {
   height: 36px;
 
@@ -968,11 +828,6 @@ input {
   color: #ff6217;
 }
 
-
-/* ==================================== */
-/* MAIN FINANCE CARD */
-/* ==================================== */
-
 .finance-card {
   width: 100%;
 
@@ -986,11 +841,6 @@ input {
 
   padding: 30px 20px 35px;
 }
-
-
-/* ==================================== */
-/* TRANSACTION FORM */
-/* ==================================== */
 
 .transaction-form {
   width: 100%;
@@ -1025,9 +875,6 @@ input {
   color: #777d88;
 }
 
-
-/* description */
-
 .description-input {
   width: 30%;
   height: 38px;
@@ -1049,9 +896,6 @@ input {
 .description-input::placeholder {
   color: #cbd0dc;
 }
-
-
-/* category */
 
 .category-select {
   width: 20%;
@@ -1087,9 +931,6 @@ input {
 
   color: #bac2d1;
 }
-
-
-/* DROPDOWN */
 
 .category-dropdown {
   width: 100%;
@@ -1132,9 +973,6 @@ input {
 
   color: #757b87;
 }
-
-
-/* amount */
 
 .amount-wrapper {
   width: 13%;
@@ -1183,8 +1021,6 @@ input {
 }
 
 
-/* orange add */
-
 .add-button {
   height: 38px;
 
@@ -1209,9 +1045,6 @@ input {
   background: #ec5d16;
 }
 
-
-/* clear */
-
 .clear-button {
   height: 38px;
 
@@ -1232,11 +1065,6 @@ input {
   cursor: pointer;
 }
 
-
-/* ==================================== */
-/* TABLE + SUMMARY */
-/* ==================================== */
-
 .finance-content {
   width: 100%;
 
@@ -1246,9 +1074,6 @@ input {
 
   gap: 27px;
 }
-
-
-/* TABLE */
 
 .transactions-table {
   flex: 1;
@@ -1269,11 +1094,7 @@ input {
   display: grid;
 
   grid-template-columns:
-    100px
-    1.7fr
-    1.3fr
-    120px
-    45px;
+    100px 1.7fr 1.3fr 120px 45px;
 
   align-items: center;
 
@@ -1333,17 +1154,11 @@ input {
   font-size: 12px;
 }
 
-
-/* empty horizontal rows */
-
 .empty-table-lines div {
   height: 36px;
 
   border-bottom: 1px solid #edf0f6;
 }
-
-
-/* orange scrollbar */
 
 .orange-scroll {
   width: 5px;
@@ -1356,11 +1171,6 @@ input {
 
   background: #ff681c;
 }
-
-
-/* ==================================== */
-/* SUMMARY */
-/* ==================================== */
 
 .summary {
   width: 215px;
@@ -1402,11 +1212,6 @@ input {
 
   font-size: 9px;
 }
-
-
-/* ==================================== */
-/* DASHBOARD RESPONSIVE */
-/* ==================================== */
 
 @media (max-width: 1000px) {
 
@@ -1518,10 +1323,6 @@ input {
   }
 }
 
-/* ============================== */
-/* BALANCE */
-/* ============================== */
-
 .balance-input-wrapper {
   min-width: 145px;
   height: 42px;
@@ -1563,11 +1364,6 @@ input {
 .balance-input::-webkit-outer-spin-button {
   appearance: none;
 }
-
-
-/* ============================== */
-/* ZERO BALANCE TOOLTIP */
-/* ============================== */
 
 .balance-tooltip {
   width: 265px;
@@ -1612,11 +1408,6 @@ input {
   border-right: 12px solid transparent;
   border-bottom: 13px solid #082758;
 }
-
-
-/* ============================== */
-/* TEXT SIZE */
-/* ============================== */
 
 .balance-label {
   font-size: 12px;
@@ -1675,22 +1466,16 @@ input {
   font-size: 16px;
 }
 
-/* ===================================== */
-/* CALCULATIONS */
-/* ===================================== */
-
 .calculations-page {
   width: 100%;
   min-height: calc(100vh - 44px);
 
   background:
-    linear-gradient(
-      to bottom,
+    linear-gradient(to bottom,
       #f3f6fc 0%,
       #f3f6fc 68%,
       #ffffff 68%,
-      #ffffff 100%
-    );
+      #ffffff 100%);
 
   padding: 30px 0 80px;
 }
@@ -1702,9 +1487,6 @@ input {
   margin: 0 auto;
 }
 
-
-/* TOP */
-
 .calculations-top {
   min-height: 70px;
 
@@ -1714,9 +1496,6 @@ input {
   align-items: center;
   justify-content: space-between;
 }
-
-
-/* BACK */
 
 .back-home {
   display: flex;
@@ -1740,9 +1519,6 @@ input {
 
   object-fit: contain;
 }
-
-
-/* BALANCE */
 
 .calculations-balance {
   position: absolute;
@@ -1798,9 +1574,6 @@ input {
   font-size: 11px;
 }
 
-
-/* PERIOD */
-
 .period {
   text-align: center;
 }
@@ -1851,9 +1624,6 @@ input {
   font-size: 13px;
 }
 
-
-/* SUMMARY */
-
 .calculations-summary {
   width: 100%;
   height: 48px;
@@ -1896,9 +1666,6 @@ input {
   background: #e6e8ed;
 }
 
-
-/* CATEGORY BLOCK */
-
 .categories-card {
   width: 100%;
   min-height: 320px;
@@ -1912,9 +1679,6 @@ input {
   box-shadow:
     0 10px 30px rgba(40, 50, 80, 0.04);
 }
-
-
-/* TITLE */
 
 .categories-title {
   display: flex;
@@ -1952,9 +1716,6 @@ input {
   object-fit: contain;
 }
 
-
-/* CATEGORY GRID */
-
 .category-grid {
   max-width: 760px;
 
@@ -1975,9 +1736,6 @@ input {
   grid-template-columns:
     repeat(2, 1fr);
 }
-
-
-/* CATEGORY */
 
 .category-stat {
   min-width: 90px;
@@ -2027,9 +1785,6 @@ input {
   text-transform: uppercase;
 }
 
-
-/* DASHBOARD BUTTON */
-
 .calculations-link {
   display: flex;
   align-items: center;
@@ -2054,9 +1809,6 @@ input {
   object-fit: contain;
 }
 
-
-/* LOADING */
-
 .calculations-loading {
   min-height: calc(100vh - 44px);
 
@@ -2068,9 +1820,6 @@ input {
 
   font-size: 16px;
 }
-
-
-/* ADAPTIVE */
 
 @media (max-width: 950px) {
 
